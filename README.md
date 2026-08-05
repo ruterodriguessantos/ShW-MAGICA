@@ -3,6 +3,9 @@ ShW-MAGICA is a Python implementation of the Lehtinen–Pirjola method for compu
 
 The code is based on the original GEOMAGICA framework and extends it by incorporating the LPm method, explicit shield wire equivalent circuits, and adaptations for the Portuguese transmission network.
 
+![Uploading graphic1.png…]()
+
+
 # Input Files
 
 GRID.txt - Defines the network nodes. Each row corresponds to one node.
