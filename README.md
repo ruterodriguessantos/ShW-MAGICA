@@ -10,7 +10,7 @@ The code is based on the original GEOMAGICA framework and extends it by incorpor
 **Figure 1.** Schematic of GICs flowing both along phase conductors and ShW. 
 
 <p align="center">
-  <img src="equivalent.PNG" width="650">
+  <img src="equivalent.png" width="650">
 </p>
 
 **Figure 2.** Equivalent circuit representation used for explicit modelling of shield wires.
