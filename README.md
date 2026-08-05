@@ -27,19 +27,12 @@ Each file stores both field components: northward component (E_n), eastward comp
 
 This work is based on the original GEOMAGICA framework developed from
 
-P. Weidelt
-C. Beggan
-K. Turnbull
-A. McKay
-R. Bailey
+P. Weidelt, C. Beggan, K. Turnbull, A. McKay, R. Bailey
 https://github.com/geomagpy/GEOMAGICA
 
 The present implementation (ShW-MAGICA) was developed by
 
-Rute Rodrigues dos Santos
-Alexandra Pais
-Joana Alves Ribeiro
-Fernando Pinheiro
+Rute Rodrigues dos Santos, Alexandra Pais, Joana Alves Ribeiro, Fernando Pinheiro
 
 Department of Physics, University of Coimbra
 CITEUC
