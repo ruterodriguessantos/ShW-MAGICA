@@ -25,7 +25,9 @@ Each file stores both field components: northward component (E_n), eastward comp
 
 # Code versions
 
-This repository contains four standalone Python scripts. They differ according to the geoelectric field model (uniform or spatially varying) and whether shield wires are explicitly included in the network model.
+The repository contains four standalone Python scripts corresponding to the four simulation configurations used in the published work.
+The scripts intentionally remain largely independent to preserve reproducibility of the results reported in the thesis and associated papers.
+They differ according to the geoelectric field model (uniform or spatially varying) and whether shield wires are explicitly included in the network model.
 
 ### 1. Uniform electric field (without shield wires)
 
