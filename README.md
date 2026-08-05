@@ -3,8 +3,12 @@ ShW-MAGICA is a Python implementation of the Lehtinen–Pirjola method for compu
 
 The code is based on the original GEOMAGICA framework and extends it by incorporating the LPm method, explicit shield wire equivalent circuits, and adaptations for the Portuguese transmission network.
 
-![Uploading graphic1.png…]()
+<p align="center">
+  <img src="Figures/equivalent_circuit.png" width="650">
+</p>
 
+**Figure 1.** Equivalent circuit representation used for explicit modelling
+of shield wires.
 
 # Input Files
 
