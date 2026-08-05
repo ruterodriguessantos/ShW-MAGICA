@@ -23,6 +23,26 @@ The file stores two arrays: latitude, longitude
 E_field_Coord.pkl - The electric field file contains the geoelectric field evaluated at the interpolation points defined in Point_Coord.pkl.
 Each file stores both field components: northward component (E_n), eastward component (E_e)
 
+# Code versions
+
+This repository contains four standalone Python scripts. They differ according to the geoelectric field model (uniform or spatially varying) and whether shield wires are explicitly included in the network model.
+
+### 1. Uniform electric field (without shield wires)
+
+Computes GICs using the LPm formulation assuming a uniform geoelectric field. This is the baseline implementation without explicit shield wire modelling.
+
+### 2. Uniform electric field (with shield wires)
+
+Extends the baseline implementation by explicitly modelling shield wires through equivalent electrical circuits.
+
+### 3. Spatially varying electric field (without shield wires)
+
+Computes GICs using electric field maps. The electric field is interpolated to the transmission line integration points using Delaunay triangulation before calculating the induced voltages.
+
+### 4. Spatially varying electric field (with shield wires)
+
+Complete implementation of ShW-MAGICA. Combines the LPm formulation, Delaunay interpolation of spatially varying electric fields, and explicit shield wire modelling.
+
 # Credits
 
 This work is based on the original GEOMAGICA framework developed from
