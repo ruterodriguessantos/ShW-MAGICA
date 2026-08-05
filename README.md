@@ -4,11 +4,16 @@ ShW-MAGICA is a Python implementation of the Lehtinen–Pirjola method for compu
 The code is based on the original GEOMAGICA framework and extends it by incorporating the LPm method, explicit shield wire equivalent circuits, and adaptations for the Portuguese transmission network.
 
 <p align="center">
-  <img src="Figures/equivalent_circuit.png" width="650">
+  <img src="graphic1.png" width="650">
 </p>
 
-**Figure 1.** Equivalent circuit representation used for explicit modelling
-of shield wires.
+**Figure 1.** Schematic of GICs flowing both along phase conductors and ShW. 
+
+<p align="center">
+  <img src="equivalent.PNG" width="650">
+</p>
+
+**Figure 2.** Equivalent circuit representation used for explicit modelling of shield wires.
 
 # Input Files
 
@@ -52,7 +57,16 @@ Computes GICs using electric field from a geomagnetic storm. The electric field 
 
 Complete implementation of ShW-MAGICA. Combines the LPm formulation, Delaunay interpolation of spatially varying electric fields, and explicit shield wire modelling.
 
-# Credits
+# Resources
+1. Santos, R. R., Pais, M. A., Cardoso, J. M., Ribeiro, J. A., & Pinheiro, F. J. (2025). The influence of Shield Wires on GIC simulations for realistic power grids. Electric Power Systems Research, 244, 111540.
+
+2. Santos, R., Pais, M. A., Ribeiro, J. A., Cardoso, J., Perro, L., & Santos, A. (2022). Effect of shield wires on GICs: Equivalent resistance and induced voltage sources. International Journal of Electrical Power & Energy Systems, 143, 108487.
+
+3. Alves Ribeiro, J., Pinheiro, F. J., Pais, M. A., Santos, R., Cardoso, J., Baltazar‐Soares, P., & Monteiro Santos, F. A. (2023). Toward more accurate GIC estimations in the Portuguese power network. Space Weather, 21(6), e2022SW003397.
+
+4. Bailey, R. L., Halbedl, T. S., Schattauer, I., Römer, A., Achleitner, G., Beggan, C. D., ... & Leonhardt, R. (2017, June). Modelling geomagnetically induced currents in midlatitude Central Europe using a thin-sheet approach. In Annales Geophysicae (Vol. 35, No. 3, pp. 751-761). Göttingen, Germany: Copernicus Publications.
+
+# Credits & Authors
 
 This work is based on the original GEOMAGICA framework developed from
 
