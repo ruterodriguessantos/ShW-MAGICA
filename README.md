@@ -29,7 +29,7 @@ This repository contains four standalone Python scripts. They differ according t
 
 ### 1. Uniform electric field (without shield wires)
 
-Computes GICs using the LPm formulation assuming a uniform geoelectric field. This is the baseline implementation without explicit shield wire modelling.
+Computes GICs using the LPm formulation assuming a uniform geoelectric field. 
 
 ### 2. Uniform electric field (with shield wires)
 
@@ -37,7 +37,7 @@ Extends the baseline implementation by explicitly modelling shield wires through
 
 ### 3. Spatially varying electric field (without shield wires)
 
-Computes GICs using electric field maps. The electric field is interpolated to the transmission line integration points using Delaunay triangulation before calculating the induced voltages.
+Computes GICs using electric field from a geomagnetic storm. The electric field is interpolated to the transmission line integration points before calculating the induced voltages.
 
 ### 4. Spatially varying electric field (with shield wires)
 
