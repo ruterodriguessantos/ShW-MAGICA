@@ -27,7 +27,7 @@ GRID_ShW.txt - Defines the network nodes regarding ShW (i', j' in Figure 2). Eac
 Column	Description: node name, node number, latitude (°), longitude (°), grounding resistance (1/Y_S_i' and 1/Y_S_j' in Figure 2), transformer resistance
 
 CONNECTIONS_ShW.txt - Defines the network connections regarding ShW  (N_i-i',N_j-j' in Figure 2). Each row corresponds to one new line of ShW.
-Column	Description: shield wire name, shield wire number, from node, to node, resistance (1/Y_N_{i}i' and 1/Y_N_{j}j' in Figure 2), corresponding transmission line (i-j in Figure 2), RG value, Req value, RW value
+Column	Description: shield wire name, shield wire number, from node, to node, resistance (1/Y_N_{i}i' and 1/Y_N_{j}j' in Figure 2), corresponding transmission line (i-j in Figure 2), RG value (Figure 1), Req value, RW value (Figure 1)
 
 Point_Coord.pkl - Contains the coordinates of the electric field interpolation grid
 The file stores two arrays: latitude, longitude
