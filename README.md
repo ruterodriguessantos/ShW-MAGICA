@@ -1,7 +1,7 @@
 # ShW-MAGICA
-ShW-MAGICA is a Python implementation of the Lehtinen–Pirjola method for computing Geomagnetically Induced Currents (GICs) in transmission networks, including the explicit modelling of shield wires (ShW).
+ShW-MAGICA is a Python implementation of the Lehtinen–Pirjola modified method for computing Geomagnetically Induced Currents (GICs) in transmission networks, including the explicit modelling of shield wires (ShW).'
 
-The code is based on the original GEOMAGICA framework and extends it by incorporating the LPm method, explicit shield wire equivalent circuits, and adaptations for the Portuguese transmission network.
+The code is based on the original GEOMAGICA framework (4) and extends it by incorporating the LPm method, explicit shield wire equivalent circuits, Delaunay interpolation of spatially varying induced fields and optimised electromotive force calculation along power lines.
 
 <p align="center">
   <img src="graphic1.png" width="650">
@@ -17,17 +17,17 @@ The code is based on the original GEOMAGICA framework and extends it by incorpor
 
 # Input Files
 
-GRID.txt - Defines the network nodes. Each row corresponds to one node.
-Column	Description: Node number, Node name, Node code,	Country,	Latitude (°),	Longitude (°), Grounding resistance (Ω), Transformer resistance (Ω)
+GRID.txt - Defines the network nodes (i, j, N_i, N_j in Figure 2). Each row corresponds to one node.
+Column	Description: Node number, Node name, Node code,	Country,	Latitude (°),	Longitude (°), Grounding resistance (1/Y_S_i and 1/Y_S_j in Figure 2), Transformer resistance
 
-CONNECTIONS.txt - Defines the network connections. Each row corresponds to one line or transformer.
-Column	Description: substation name, transformer type, winding, from node, to node, line length, shield wire type, phase exception, line resistance, nominal voltage
+CONNECTIONS.txt - Defines the network connections (i-j, i-N_i and j-N_j in Figure 2). Each row corresponds to one power line or transformer winding.
+Column	Description: substation name, transformer type, winding, from node, to node, line length, shield wire type, phase exception, line resistance (1/Y_{ij}, 1/Y_T_i and 1/Y_T_j in Figure 2), nominal voltage
 
-GRID_ShW.txt - Defines the network nodes regarding ShW. Each row corresponds to one new node.
-Column	Description: node identifier, latitude, longitude, grounding resistance, transformer resistance
+GRID_ShW.txt - Defines the network nodes regarding ShW (i', j' in Figure 2). Each row corresponds to one new node.
+Column	Description: node name, node number, latitude (°), longitude (°), grounding resistance (1/Y_S_i' and 1/Y_S_j' in Figure 2), transformer resistance
 
-CONNECTIONS_ShW.txt - Defines the network connections regarding ShW. Each row corresponds to one new line of ShW.
-Column	Description: shield wire node, connected power system node, corresponding transmission line, equivalent resistance, grounding parameters
+CONNECTIONS_ShW.txt - Defines the network connections regarding ShW  (N_i-i',N_j-j' in Figure 2). Each row corresponds to one new line of ShW.
+Column	Description: shield wire name, shield wire number, from node, to node, resistance (1/Y_N_{i}i' and 1/Y_N_{j}j' in Figure 2), corresponding transmission line (i-j in Figure 2), RG value, Req value, RW value
 
 Point_Coord.pkl - Contains the coordinates of the electric field interpolation grid
 The file stores two arrays: latitude, longitude
